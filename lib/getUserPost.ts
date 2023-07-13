@@ -8,7 +8,7 @@ export default async function getUserPost(userId: string) {
     }
   );
 
-  if (!res.ok) throw new Error("can't get detail data");
+  if (!res.ok) return undefined;
 
   return res.json();
 }
