@@ -9,10 +9,7 @@ export const metadata: Metadata = {
 export default async function UserPage() {
   // User definition get from types.d.ts
   const usersData: Promise<User[]> = getAllUsers();
-
   const users = await usersData;
-
-  console.log('Hello');
 
   const content = (
     <section>
