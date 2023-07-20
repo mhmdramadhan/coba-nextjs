@@ -1,5 +1,3 @@
 export default function NotFound() {
-  return (
-    <div>NotFound</div>
-  )
+  return <h1>The requested user does not exist</h1>;
 }
