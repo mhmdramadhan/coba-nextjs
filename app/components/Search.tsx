@@ -1,13 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function Search() {
   const [search, setSearch] = useState('');
   const router = useRouter();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSearch('');
     router.push(`/${search}/`);
@@ -16,7 +16,7 @@ export default function Search() {
   return (
     <form
       className="w-50 flex justify-center md:justify-between"
-      onSubmit={e => handleSubmit}
+      onSubmit={handleSubmit}
     >
       <input
         type="text"
