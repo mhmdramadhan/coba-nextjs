@@ -13,15 +13,16 @@ export default async function UserPage() {
 
   const content = (
     <section>
+      <br />
       <h2>
-        <Link href="/">Back to home</Link>
+        <Link href="/" className='bg-blue-600 px-2 py-2 text-white rounded-lg mx-2 mt-2'>Back to home</Link>
       </h2>
       <br />
       {users.map((user) => {
         return (
           <>
             <p key={user.id}>
-              <Link href={`/users/${user.id}`}>{user.name}</Link>
+              <Link href={`/users/${user.id}`} className='text-white'>{user.name}</Link>
             </p>
             <br />
           </>

@@ -1,7 +1,11 @@
+// Use the client directive for using usePathname hook.
+'use client';
+
 import './globals.css';
 import Navbar from './components/Navbar';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { usePathname } from 'next/navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,10 +19,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
   return (
     <html lang="en">
-      <body className='bg-slate-800'>
-        <Navbar />
+      <body className="bg-slate-800">
+        {pathname !== '/blog' && <Navbar />}
         {children}
       </body>
     </html>
