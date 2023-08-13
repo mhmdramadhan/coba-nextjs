@@ -33,3 +33,39 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# coba next-2
+# dependencies
+/coba-next2/node_modules
+/coba-next2/.pnp
+/coba-next2/.pnp.js
+
+# testing
+/coba-next2/coverage
+
+# next.js
+/coba-next2/.next/
+/coba-next2/out/
+
+# production
+/coba-next2/build
+
+# misc
+/coba-next2/.DS_Store
+/coba-next2/*.pem
+
+# debug
+/coba-next2/npm-debug.log*
+/coba-next2/yarn-debug.log*
+/coba-next2/yarn-error.log*
+
+# local env files
+/coba-next2/.env*.local
+
+# vercel
+/coba-next2/.vercel
+
+# typescript
+/coba-next2/*.tsbuildinfo
+/coba-next2/next-env.d.ts
+
