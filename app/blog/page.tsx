@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Posts from "./components/Posts";
 
 const Blog = () => {
   return (
@@ -6,9 +7,10 @@ const Blog = () => {
       <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
         Hello and Welcome 👋&nbsp;
         <span className="whitespace-nowrap">
-          I'm <span className="font-bold">Rama</span>
+          I&apos;m <span className="font-bold">Rama</span>
         </span>
       </p>
+      <Posts />
     </main>
   );
 };

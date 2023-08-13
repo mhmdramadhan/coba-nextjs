@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-800">
-        {pathname !== '/blog' && <Navbar />}
+        {pathname !== '/blog' && pathname !== '/blog/posts/:postId' && <Navbar />}
         {children}
       </body>
     </html>
