@@ -69,3 +69,38 @@ next-env.d.ts
 /coba-next2/*.tsbuildinfo
 /coba-next2/next-env.d.ts
 
+# coba next-3
+# dependencies
+/coba-next3/node_modules
+/coba-next3/.pnp
+/coba-next3/.pnp.js
+
+# testing
+/coba-next3/coverage
+
+# next.js
+/coba-next3/.next/
+/coba-next3/out/
+
+# production
+/coba-next3/build
+
+# misc
+/coba-next3/.DS_Store
+/coba-next3/*.pem
+
+# debug
+/coba-next3/npm-debug.log*
+/coba-next3/yarn-debug.log*
+/coba-next3/yarn-error.log*
+
+# local env files
+/coba-next3/.env*.local
+
+# vercel
+/coba-next3/.vercel
+
+# typescript
+/coba-next3/*.tsbuildinfo
+/coba-next3/next-env.d.ts
+
